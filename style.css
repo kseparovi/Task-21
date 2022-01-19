@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+/*https://fonts.google.com/ - skidanje fontova*/
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: serif;
+}
+.wrapper { /*izgled pozadine na stranici*/
+    background-image:linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.35)),url(background.JPG);
+    background-size: cover;
+    height: 100vh;
+
+
+}
+.navbar{ /*oblikujemo kontejner navigacije*/
+
+    height: 80px;
+    width: 100%;
+    background:linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.55));
+
+}
+.logo{
+    float: left;
+    width: 140px;
+    height: auto;
+    padding: 20px 100px ;
+    
+
+}
+.navbar ul{ /*određujemo na kojoj strani ce biti navigacija*/
+    float: right;
+    margin-right: 20px;
+
+
+}
+.navbar ul li { /*određujemo poziciju texta u navigaciji*/
+    list-style: none;
+    margin: 0 8px;
+    display: inline-block;
+    line-height: 80px;
+    
+
+
+
+}
+.navbar ul li a { /*određujemo kako ce izgledati text u navigaciji*/
+    text-decoration: none; /*nema crtica ispod slova*/
+    color: white;
+    font-size: 20px;
+    padding: 6px 13px;
+    font-family: "roboto", sans-serif;
+    transition: 0.5s;
+
+
+}
+.navbar ul li a.active,
+.navbar ul li a:hover{
+
+    background:green;
+    border-radius: 2px;
+
+
+}
+
+.wrapper .center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+    user-select: none;
+
+
+}
+.center h1{
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    width: 900px ;
+    text-align: center;
+    font-family: "roboto", sans-serif;
+}
+
+.center h2{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "roboto", sans-serif;
+    width: 885px ;
+    margin: top 10px; ;
+    text-align: center;
+}
+.center .buttons{
+    margin:  35px 280px;
+
+}
+.buttons button{
+    height: 50px;
+    width: 150px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: green;
+    border: 1px solid rgb(18, 48, 20);
+    outline: none;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: 0.5s;
+    font-family: "roboto", sans-serif;
+}
+.buttons .btn{
+    margin-left: 25px;
+}
+.buttons button:hover{
+    background: darkgreen;
+
+}
+
+
+
+
